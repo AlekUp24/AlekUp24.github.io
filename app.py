@@ -6,7 +6,7 @@ app = Flask(__name__, template_folder='templates', static_folder='static', stati
 def index():
     return render_template('index.html')
 
-@app.route('/')
+@app.route('/about')
 def index():
     return 'Hello World')
 
