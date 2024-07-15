@@ -7,9 +7,16 @@
     <title>Hubert Chmielewski - Personal Website</title>
 </head>
 <body>
+    <div class="navbar">
+            <a href="">Contact</a>
+            <a href="">GitHub</a>
+            <a href="">Download CV</a>
+    </div>
+
     <header>
         <h1>Hubert Chmielewski</h1>
         <p>Web &amp; Python Developer</p>
+
     </header>
 
     <section>
@@ -18,22 +25,73 @@
             👋 Hi there! I'm Hubert, a passionate Python Developer with a love for building innovative solutions 
             and contributing to the ever-evolving world of technology.
         </p>
+        <div id="tech-stack">
+            <p>Technologies & Tools</p>
+                <img src="https://skillicons.dev/icons?i=py,flask,sqlite,selenium,sklearn,html,css,bootstrap,js,git"/>
+            <p>Currently learning</p>
+                <img src="https://skillicons.dev/icons?i=django,mongodb"/>
+            <p>Want to learn</p>
+                <img src="https://skillicons.dev/icons?i=fastapi,docker,kubernetes,react,nodejs"/>
+        </div>
+
     </section>
 
     <section>
         <h2>Projects</h2>
 
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Technologies Used: HTML, CSS, JavaScript</p>
+        <div class="row project">
+            <div class="column">
+                <img class="app-preview" src="https://kinsta.com/wp-content/uploads/2020/08/common-website-layout.jpg"/>
+            </div>
+            <div class="column">
+                <h3>E-Commerce Heaven</h3>
+                <p>Classic E-Commerce web application to improve development skills. This project was crucial to understand how to build complex Django App and expand it as project grows.
+                    It allowed me to combine my Python, Django, HTML, CSS, JS and database skills to make fully functional application.</p>
+                <p><i><b>Technologies Used: Django, Bootstrap, PostgreSQL</b></i></p>
+                <p>Github <a href="https://github.com/AlekUp24/ECommerce_Website_Django">HERE</a></p>
+                <p>Hoasted <a href="">HERE</a></p>
+            </div>
         </div>
 
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Technologies Used: React, Node.js, MongoDB</p>
+        <div class="row project">
+            <div class="column">
+                <img class="app-preview" src="./static/Flask_TODO_1.png"/>
+            </div>
+            <div class="column">
+                <h3>ToDo App</h3>
+                <p> ToDo App with authentication in Flask (sqlite, Flask, Authentication, signup, login) - app to create your own to do list, mark complete, keep track of deadlines and see which tasks are overdue.</p>
+                <p><i><b>Technologies Used: Flask, Bootstrap, SQLite</b></i></p>
+                <p>Github <a href="https://github.com/AlekUp24/Flask_My_One_Off_ToDo">HERE</a></p>
+            </div>
         </div>
+
+        <div class="row project">
+            <div class="column">
+                <img class="app-preview" src="./static/Flask_Weather_App.png"/>
+            </div>
+            <div class="column">
+                <h3>Weather App</h3>
+                <p>WeatherApp based on API calls to OpenWeatherMap.</p>
+                <p><i><b>Technologies Used: Flask, Bootstrap</b></i></p>
+                <p>Github <a href="https://github.com/AlekUp24/Flask_Weather_App">HERE</a></p>
+            </div>
+        </div>
+
+
+        <div class="row project">
+            <div class="column">
+                <img class="app-preview" src="https://kinsta.com/wp-content/uploads/2020/08/common-website-layout.jpg"/>
+            </div>
+            <div class="column">
+                <h3>E-Commerce Heaven</h3>
+                <p>Classic E-Commerce web application to improve development skills. This project was crucial to understand how to build complex Django App and expand it as project grows.
+                    It allowed me to combine my Python, Django, HTML, CSS, JS and database skills to make fully functional application.
+                </p>
+                <p><i><b>Technologies Used: Django, Bootstrap, PostgreSQL</b></i></p>
+                <p>Hoasted <a href="">HERE</a></p>
+            </div>
+        </div>
+
 
         <!-- Add more project sections as needed -->
 
@@ -44,3 +102,16 @@
     </footer>
 </body>
 </html>
+<!----
+
+    TO DO :
+
+    Add list of projects and expand when clicked with JS.
+        - project has a short decs (technologies, what it does (maybe screenshots) and link to hosted app)
+
+    Add navbar with:
+    - a button to show my CV - maybe download from static.
+    - contact details section scroll
+    - link directly to github with GH icon
+
+-->
