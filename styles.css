@@ -1,21 +1,57 @@
+.navbar {
+    overflow: hidden;
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 14px;
+    margin: auto 10px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    border: solid 0.5px #fff;
+    border-radius: 10px;
+    background-color: #141414;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: black;
+    border: solid black 1px;
+    
+  }
+
 body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
-    flex-direction: column;
+    width: 100%;
 }
 
 header {
     background-color: #141414;
-    color: #fff;
-    padding: 20px;
+    color: #d3d0d0;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 30px;
     text-align: center;
+    width: 100%;
 }
 
 section {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
     background-color: #fff;
@@ -24,14 +60,12 @@ section {
 }
 
 h1 {
-    color: #d3d0d0;
+    color: #fff;
+    font-size: 3em;
 }
 
 h2 {
     color: #524e4e;
-}
-
-h2 {
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -41,14 +75,44 @@ p {
     line-height: 1.6;
 }
 
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+    vertical-align: middle;
+}
+
 .project {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.project:hover{
+    transform:scale(1.03);
+}
+
+.app-preview {
+    width: 90%;
+    margin: auto;
+    box-shadow: 10px 10px 10px #524e4e;
+}
+
+#tech-stack {
+    margin-left: 20px;
+    font-weight: bold;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding-top: 3px;
+    padding-bottom: 20px;
     background-color: #141414;
     color: #fff;
-    margin-top: auto;
+    position:static;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
 }
