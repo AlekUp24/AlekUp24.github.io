@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Hubert Chmielewski - Personal Website</title>
 </head>
 <body>
     <div class="navbar">
-            <a href="">Contact</a>
-            <a href="">GitHub</a>
-            <a href="">Download CV</a>
+            <button onclick="goToSection('contact-section')">Contact</button>
+            <button onclick="location.href='https://github.com/AlekUp24'">GitHub</button>
+            <button onclick="location.href='https://www.linkedin.com/in/hubert-chmielewski/'">LinkedIn</button>
+            <button href="">Download CV</button>
     </div>
 
     <header>
@@ -27,11 +29,12 @@
         </p>
         <div id="tech-stack">
             <p>Technologies & Tools</p>
-                <img src="https://skillicons.dev/icons?i=py,flask,sqlite,selenium,sklearn,html,css,bootstrap,js,git"/>
+                <img src="https://skillicons.dev/icons?i=py,django,flask,sqlite,selenium"/><br>
+                <img src="https://skillicons.dev/icons?i=html,css,bootstrap,js,git"/>
             <p>Currently learning</p>
-                <img src="https://skillicons.dev/icons?i=django,mongodb"/>
+                <img src="https://skillicons.dev/icons?i=docker,mongodb"/>
             <p>Want to learn</p>
-                <img src="https://skillicons.dev/icons?i=fastapi,docker,kubernetes,react,nodejs"/>
+                <img src="https://skillicons.dev/icons?i=fastapi,kubernetes,react,nodejs"/>
         </div>
 
     </section>
@@ -49,7 +52,7 @@
                     It allowed me to combine my Python, Django, HTML, CSS, JS and database skills to make fully functional application.</p>
                 <p><i><b>Technologies Used: Django, Bootstrap, PostgreSQL</b></i></p>
                 <p>Github <a href="https://github.com/AlekUp24/ECommerce_Website_Django">HERE</a></p>
-                <p>Hoasted <a href="">HERE</a></p>
+                <p><strong>Hoasted <a href="">HERE</a></strong></p>
             </div>
         </div>
 
@@ -78,7 +81,7 @@
         </div>
 
 
-        <div class="row project">
+        <div class="row project" style="display: none;">
             <div class="column">
                 <img class="app-preview" src="https://kinsta.com/wp-content/uploads/2020/08/common-website-layout.jpg"/>
             </div>
@@ -88,13 +91,24 @@
                     It allowed me to combine my Python, Django, HTML, CSS, JS and database skills to make fully functional application.
                 </p>
                 <p><i><b>Technologies Used: Django, Bootstrap, PostgreSQL</b></i></p>
-                <p>Hoasted <a href="">HERE</a></p>
+                <p>GitHub <a href="">HERE</a></p>
             </div>
         </div>
 
 
         <!-- Add more project sections as needed -->
 
+    </section>
+
+    
+    <section id="contact-section">
+        <h2>Contact Details</h2>
+        <div id="contact-details">
+            <p><strong>City:</strong> Warsaw, POLAND</p>
+            <p><strong>Preffered work arrangement:</strong> Hybrid (office 3x week) / Remote</p>
+            <p><strong>Preffered contract type:</strong> Permanent / B2B</p>
+            <p><strong>Contact Email:</strong> <a href="mailto:hubertchmielewski0@gmail.com">hubertchmielewski0@gmail.com</a></p>
+        </div>
     </section>
 
     <footer>
