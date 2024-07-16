@@ -1,4 +1,8 @@
-.navbar {
+* {
+    scroll-behavior: smooth;
+  }
+
+  .navbar {
     overflow: hidden;
     background-color: #141414;
     color: #fff;
@@ -9,7 +13,7 @@
     width: 100%;
 }
 
-.navbar a {
+.navbar button {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -18,16 +22,17 @@
     text-decoration: none;
     font-size: large;
     font-weight: bold;
-    border: solid 0.5px #fff;
+    border: solid 2.5px #fff;
     border-radius: 10px;
     background-color: #141414;
 }
 
-.navbar a:hover {
+.navbar button:hover {
     background-color: #fff;
     color: black;
-    border: solid black 1px;
-    
+    border: solid 2.5px #141414;
+    border-radius: 10px;
+    transition: 0.4s;
   }
 
 body {
@@ -63,6 +68,8 @@ h1 {
     color: #fff;
     font-size: 3em;
 }
+
+
 
 h2 {
     color: #524e4e;
@@ -103,6 +110,12 @@ p {
 #tech-stack {
     margin-left: 20px;
     font-weight: bold;
+}
+
+#contact-details {
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 footer {
