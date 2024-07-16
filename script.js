@@ -3,3 +3,14 @@ function goToSection(section_id) {
     behavior: 'smooth'
   });
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".zoomable-image");
+
+  images.forEach(function (image) {
+    image.addEventListener("click", function () {
+      this.classList.toggle("zoomed");
+    });
+  });
+});
