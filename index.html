@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="navbar">
-            <button onclick="goToSection('contact-section')">Contact</button>
+            <button onclick="goToSection('contact-section')">Details</button>
             <button onclick="location.href='https://github.com/AlekUp24'">GitHub</button>
             <button onclick="location.href='https://www.linkedin.com/in/hubert-chmielewski/'">LinkedIn</button>
             <button onclick="location.href='./static/CV-Hubert_Chmielewski_ENG.pdf'" download="CV-Hubert_Chmielewski_ENG.pdf" target="_blank">Download CV</button>
@@ -59,6 +59,18 @@
 
         <div class="row project">
             <div class="column">
+                <img class="app-preview zoomable-image" src="./static/Django_Task_app.png"/>
+            </div>
+            <div class="column">
+                <h3>Task Planner App</h3>
+                <p>Django Web App to create your own lists, tasks associated with lists, update these tasks and delete. All CRUD operations. No user authentication (may appear later).</p>
+                <p><i><b>Technologies Used: Django, Tailwind, Sqlite3</b></i></p>
+                <p>Github <a href="https://github.com/AlekUp24/Task_Planner_App">HERE</a></p>
+            </div>
+        </div>
+
+        <div class="row project">
+            <div class="column">
                 <img class="app-preview zoomable-image" src="./static/Flask_TODO_1.png"/>
             </div>
             <div class="column">
@@ -103,7 +115,7 @@
 
     
     <section id="contact-section">
-        <h2>Contact Details</h2>
+        <h2>Details</h2>
         <div id="contact-details">
             <p><strong>City:</strong> Warsaw, POLAND</p>
             <p><strong>Preffered work arrangement:</strong> Hybrid (office 3x week) / Remote</p>
