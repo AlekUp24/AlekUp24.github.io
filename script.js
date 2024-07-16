@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   images.forEach(function (image) {
     image.addEventListener("click", function () {
       this.classList.toggle("zoomed");
+      console.log("clicked");
     });
   });
 });
