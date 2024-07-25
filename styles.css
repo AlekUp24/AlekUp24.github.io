@@ -96,11 +96,11 @@ p {
     margin-left: 10px;
     transition: 0.3s;
 }
-
+/*
 .project:hover{
     transform:scale(1.03);
 }
-
+*/
 .app-preview {
     width: 90%;
     margin: auto;
