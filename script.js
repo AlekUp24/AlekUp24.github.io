@@ -4,16 +4,16 @@ function goToSection(section_id) {
   });
 }
 
+//
+//document.addEventListener("DOMContentLoaded", function () {
+//  const images = document.querySelectorAll(".zoomable-image");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll(".zoomable-image");
-
-  images.forEach(function (image) {
-    image.addEventListener("click", function () {
-      this.classList.toggle("zoomed");
-    });
-  });
-});
+//  images.forEach(function (image) {
+//    image.addEventListener("click", function () {
+//      this.classList.toggle("zoomed");
+//    });
+//  });
+//});
 
 
   document.addEventListener('DOMContentLoaded', () => {
