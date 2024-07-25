@@ -17,7 +17,7 @@ function goToSection(section_id) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-const gallery = document.getElementByClass('row project"');
+const gallery = document.getElementByClassName('row project"');
 const images = gallery.getElementsByTagName('img');
 
 // Create modal overlay
