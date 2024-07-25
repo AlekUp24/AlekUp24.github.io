@@ -142,7 +142,7 @@ footer {
     transform: scale(2.2);
     transition: transform 0.3s ease-in-out;
 }
-
+*/
 .zoomable-image img {
     border-radius: 5%;
     max-width: 350px;
@@ -152,7 +152,7 @@ footer {
     object-fit: cover;
     cursor: pointer;
 }
-*/
+
 .zoomable-image img:hover{
     transition: 0.3s ease-in-out;
     transform: scale(1.05);
