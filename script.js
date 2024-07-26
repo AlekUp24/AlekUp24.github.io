@@ -17,8 +17,8 @@ function goToSection(section_id) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-//const gallery = document.getElementsByClassName('project');
-const images = document.getElementsByTagName('img');
+const projects = document.getElementById('project');
+const images = projects.getElementsByTagName('img');
 
 // Create modal overlay
 const modalOverlay = document.createElement('div');
@@ -32,7 +32,7 @@ modalOverlay.appendChild(zoomedImage);
 // Append modal overlay to body
 document.body.appendChild(modalOverlay);
 
-// Add click event to each image in the gallery
+// Add click event to each image in the projects
 for (let img of images) {
   img.addEventListener('click', function () {
     // Set the source of the zoomed image to the clicked image's source
